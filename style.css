@@ -1,25 +1,28 @@
 body {
     margin: 0;
+    background-color: #b5b5b5;
 }
 
 div {
-    border: 1px solid #000;
     font-size: 30px;
-    background-color: #b5b5b5;
+    margin-bottom: 10px;
 }
 
 .first-block {
     width: 50px;
     height: 50px;
     font-size: 18px;
+    background-color: #2f7efc;
 }
 
 .second-block {
     width: 200px;
     height: 300px;
+    background-color: #2b8e22;
 }
 
 .third-block {
     width: 720px;
     height: 1280px;
+    background-color: #4af7d1;
 }

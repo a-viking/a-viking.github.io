@@ -1,6 +1,3 @@
-/* <div class="first-block">200x300</div>
-<div class="second-block">40x40</div>
-<div class="third-block">720x1280</div> */
 div {
     margin: 10px;
     font-size: 30px;
@@ -8,13 +5,14 @@ div {
 }
 
 .first-block {
-    width: 200px;
-    height: 300px;
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
 }
 
 .second-block {
-    width: 40px;
-    height: 40px;
+    width: 200px;
+    height: 300px;
 }
 
 .third-block {

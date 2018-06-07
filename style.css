@@ -1,0 +1,23 @@
+/* <div class="first-block">200x300</div>
+<div class="second-block">40x40</div>
+<div class="third-block">720x1280</div> */
+div {
+    margin: 10px;
+    font-size: 30px;
+    background-color: #b5b5b5;
+}
+
+.first-block {
+    width: 200px;
+    height: 300px;
+}
+
+.first-block {
+    width: 40px;
+    height: 40px;
+}
+
+.first-block {
+    width: 720px;
+    height: 1280px;
+}

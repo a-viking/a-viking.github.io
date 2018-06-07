@@ -24,5 +24,17 @@ div {
 .third-block {
     width: 720px;
     height: 1280px;
+    background-color: #444444;
+}
+
+.fourth-block {
+    width: 1280px;
+    height: 720px;
     background-color: #4af7d1;
+}
+
+.fifth-block {
+    width: 100%;
+    height: 100px;
+    background-color: #ffeb3b;
 }

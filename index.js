@@ -38,15 +38,36 @@ function handleClickParse() {
         return;
     }
 
+    const preCommand = document.getElementById('preCommand').value;
+
     const arr = inputValue.split('\n');
 
-    const outputText = arr.map(el => {
-        const ip = getIp(el);
-        const portData = getPortsData(el);
-        const address = getFullAddress(portData, ip);
-        return address;
-    }).flat().join('\n');
+    const outputText = arr
+        .map(el => {
+            const ip = getIp(el);
+            const portData = getPortsData(el);
+            const address = getFullAddress(portData, ip);
+            return address;
+        })
+        .flat()
+        .map(el => {
+            if (preCommand) {
+                return `${preCommand} ${el}`;
+            } else {
+                return el;
+            }
+        })
+        .join('\n');
 
     const outputTextArea = document.getElementById('outputText');
     outputTextArea.value = outputText;
+}
+
+function handleChangePreCommand(el) {
+    localStorage.setItem('preCommand', el.value);
+}
+
+if (localStorage.getItem('preCommand')) {
+    const preInput = document.getElementById('preCommand');
+    preInput.value = localStorage.getItem('preCommand');
 }

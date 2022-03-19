@@ -1,13 +1,13 @@
 body {
     margin: 0;
     color: #333333;
-    padding: 20px;
+    padding: 10px 20px;
     font-family: Roboto, Arial, sans-serif;
 }
 
 .main_content {
     display: flex;
-    /* justify-content: center; */
+    margin-top: 10px;
 }
 
 .button {
@@ -39,5 +39,13 @@ p {
 }
 
 pre {
-    margin-top: 5px;
+    margin: 5px 0;
+}
+
+input {
+    padding: 5px;
+    box-shadow: 1px 1px 5px rgb(0 0 0 / 10%);
+    border: 1px solid #bbb;
+    width: 520px;
+    border-radius: 5px;
 }

@@ -1,17 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
     <head>
         <meta charset="utf-8">
         <title></title>
         <link rel="stylesheet" type="text/css" href="style.css">
     </head>
+    <p class="text">
+        Allowed format:
+    </p>
+    <pre>
+        {ip} {port_number}/{protocol}
+        or
+        {port_number}/{protocol} {ip}
+
+        example:
+        111.111.111.111 (53/tcp, 80/tcp)
+        111.111.111.111 53/tcp 80/tcp
+
+        53/tcp, 80/tcp 111.111.111.111
+    </pre>
+    <div class="main_content">
+        <label>
+            Input:
+            <textarea id="inputText"></textarea>
+        </label>
+        <button onclick="handleClickParse()" class="button">Parse</button>
+        <label>
+            Output:
+            <textarea id="outputText"></textarea>
+        </label>
+    </div>
+
     <body>
-        <div class="first-block">
-            <a href="./viewport.html">50x50</a>
-        </div>
-        <div class="second-block">200x300</div>
-        <div class="third-block">720x1280</div>
-        <div class="fourth-block">1280x720</div>
-        <div class="fifth-block">100%x100px</div>
+        <script src="./index.js"></script>
     </body>
+
 </html>

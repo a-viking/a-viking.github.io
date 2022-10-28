@@ -14,10 +14,10 @@
         }
     ],
     "id": "/?source=pwa",
-    "start_url": "index.html",
+    "start_url": "/index.html",
     "background_color": "#FFFFFF",
     "display": "fullscreen",
-    "scope": "/",
+    "scope": "/index.html",
     "theme_color": "#3367D6",
     "description": "Send the information about air object during an air alarm",
     "screenshots": [

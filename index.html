@@ -1,43 +1,47 @@
-<!DOCTYPE html>
 <html lang="en">
 
     <head>
-        <meta charset="utf-8">
-        <title></title>
-        <link rel="stylesheet" type="text/css" href="style.css">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./styles/main.css">
+        <title>Dev challenge final</title>
     </head>
-    <p class="text">
-        Allowed format:
-    </p>
-    <pre>
-        {ip} {port_number}/{protocol}
-        or
-        {port_number}/{protocol} {ip}
-
-        example:
-        111.111.111.111 (53/tcp, 80/tcp)
-        111.111.111.111 53/tcp 80/tcp
-
-        53/tcp, 80/tcp 111.111.111.111
-    </pre>
-    <label>
-        Prepend command/text for each:
-        <input type="text" id="preCommand" onchange="handleChangePreCommand(this)" />
-    </label>
-    <div class="main_content">
-        <label>
-            Input:
-            <textarea id="inputText"></textarea>
-        </label>
-        <button onclick="handleClickParse()" class="button">Parse</button>
-        <label>
-            Output:
-            <textarea id="outputText"></textarea>
-        </label>
-    </div>
 
     <body>
-        <script src="./index.js"></script>
+        <div class="container">
+            <div id="chosen-item" class="chosen-item hidden">
+                <button class="main-button" id="main-button">
+                    <!-- <img id="main-btn-image" /> -->
+                </button>
+            </div>
+            <div class="item-types" id="item-types">
+                <button class="button" data-item-type="rocket">
+                    <img src="./src/missile.svg" />
+                    Rocket
+                </button>
+                <button class="button" data-item-type="drone">
+                    <img src="./src/drone.svg" />
+                    Drone
+                </button>
+                <button class="button" data-item-type="plane">
+                    <img src="./src/plane.svg" />
+                    Plane
+                </button>
+                <button class="button" data-item-type="helicopter">
+                    <img src="./src/helicopter.svg" />
+                    Helicopter
+                </button>
+            </div>
+        </div>
     </body>
+    <!-- <script src="./js/utils.js"></script>
+    <script src="./js/classes.js"></script>
+    <script type="text/javascript" src="./js/events.js"></script>
+    <script type="text/javascript" src="./js/names.js"></script> -->
+    <script src="./js/main.js"></script>
 
 </html>

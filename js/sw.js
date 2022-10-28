@@ -1,8 +1,8 @@
 //CACHING FILES//
 const filesToCache = [
-    './',
-    './index.html',
-    './styles/main.css',
+    '../',
+    '../index.html',
+    '../styles/main.css',
 ];
 
 const staticCacheName = 'pages-cache-v2';

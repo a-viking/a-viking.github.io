@@ -13,11 +13,10 @@
             "sizes": "512x512"
         }
     ],
-    "id": "/?source=pwa",
-    "start_url": "/index.html",
+    "start_url": "/",
     "background_color": "#FFFFFF",
-    "display": "fullscreen",
-    "scope": "/index.html",
+    "display": "standalone",
+    "scope": "/",
     "theme_color": "#3367D6",
     "description": "Send the information about air object during an air alarm",
     "screenshots": [

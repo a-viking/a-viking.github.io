@@ -17,7 +17,7 @@ function handleMainButtonClick() {
 function renderImage() {
     const existingImage = document.getElementById('main-btn-image');
     if (existingImage) {
-        existingImage.remove();
+        existingImage.style.visibility = 'hidden';
     }
 
     const img = new Image();
@@ -28,6 +28,9 @@ function renderImage() {
     img.onload = () => {
         if (mainButton) {
             mainButton.append(img);
+            if (existingImage) {
+                existingImage.remove();
+            }
         }
     };
 }
@@ -38,6 +41,7 @@ itemTypesContainer.addEventListener('click', ({ target }) => {
             chosenItemContainer.classList.remove('hidden');
             mainButton = document.getElementById('main-button');
             mainButton.addEventListener('click', handleMainButtonClick);
+            addSwipeListener(mainButton);
         }
 
         selectedItemType = target.dataset.itemType;
